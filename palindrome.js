@@ -6,11 +6,29 @@
 // ###
 
 
-var word = "bob";
+
+
+var is_palindrome = function reverse(s) {
+  return s.split('').reverse().join('') === s;
+
+};
+
+
+// if (is_palindrome === true) {
+//   console.log('YEAH!');
+// }
+
+// if (is_palindrome === true)
+//     console.log('FIZZER!');
+var x = (is_palindrome('bob'));
+if (x === true) {
+  console.log('YES!!!');
+}
+else {
+    console.log('NOPE!');
+  }
 
 
 
-var is_palindrome = word.slice(0) && word.slice(0).reverse;
 
 
-console.log(is_palindrome);

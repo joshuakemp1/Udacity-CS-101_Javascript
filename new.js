@@ -1,0 +1,3 @@
+function yes(input) {
+  in
+}

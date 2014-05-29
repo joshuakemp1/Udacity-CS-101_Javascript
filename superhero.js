@@ -16,12 +16,8 @@ function fix_machine(input_1, input_2) {
 
 
 
-
-  return input_2;
+  // return input_2;
+  // return "Give me something that's not useless next time."
 }
 console.log(fix_machine('jfkdsajkfdj', 'kjsaz'));
 // console.log(fix_machine('wsx0-=mttrhix', 't-shirt'));
-
-
-// return "Give me
-// // # something that's not useless next time."

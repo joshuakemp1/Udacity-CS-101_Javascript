@@ -8,4 +8,4 @@ function pushing_to_array(array_item_1, array_item_2) {
   return[how_big_is_array,fruits];
 }
 
-console.log(pushing_to_array('coke', 'bob'));
+console.log(pushing_to_array(['coke', 'bob'],['cody']));

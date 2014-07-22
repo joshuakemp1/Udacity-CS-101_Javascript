@@ -10,8 +10,10 @@ function sum_list(input) {
 
   var total = 0;
 
+  // for (i in input) can be used although not a best practice
+
    for (var i = 0; i < input.length; i++) {
-     total = input[i] + total;
+     total = total + input[i];
    }
    return total;
 }

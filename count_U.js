@@ -16,12 +16,11 @@ function measure_udacity(input){
     if (input[i].charAt(0) === 'U') {
     result = result += 1;
     }
-    return result;
+}
+return result;
 }
 
-}
-
-console.log(measure_udacity(['Udacity', 'Bob', 'Udacity', 'josh']));
+console.log(measure_udacity(['Udacity', 'Bob', 'Udacity', 'Uosh']));
 
 
 // #print measure_udacity(['Dave','Sebastian','Katy'])

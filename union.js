@@ -9,21 +9,37 @@
 function union(input_1, input_2) {
 
 var	result = [];
+var counter_a = 0;
 
+while (counter_a < input_1.length) {
+      result.push(input_1[counter_a]);
+      counter_a +=1;
+    }
 
 	var counter_1 = 0;
-	var input_2_str = input_2.toString();
+  var counter_2 = 0;
 
-	while (counter_1 < input_2_str.length) {
-		if(input_2_str[counter_1] === input_1[counter_1]) {
-			result.push(input_1[counter_1]);
-			console.log(result);
-		}
+  var unique;
+
+	while (counter_2 < input_2.length) {
+    counter_1 = 0;
+    unique = true;
+		while (counter_1 < result.length) {
+      console.log(counter_1,counter_2);
+      if (result[counter_1] === input_2[counter_2]){
+        unique = false;
+      }
+      counter_1 +=1;
+    }
+    if (unique){
+      result.push(input_2[counter_2]);
+    }
+    counter_2 +=1;
 	}
-		counter_1 +=1;
+  return result;
 }
 
-console.log(union([7,1,8,3],[3,9,9,3,9,3,9,5]));
+console.log(union([7,1,8,3],[3,9,9,3,11,9,3,9,5]));
 
 
 
@@ -39,3 +55,12 @@ console.log(union([7,1,8,3],[3,9,9,3,9,3,9,5]));
 // #>>> [1,2,3,4,6]
 // #print b
 // #>>> [2,4,6]
+
+
+
+
+
+
+// if(input_2[counter_1] === input_1[counter_1]) {
+//       result.push(input_1[counter_1]);
+//     }

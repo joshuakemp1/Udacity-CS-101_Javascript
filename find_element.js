@@ -22,17 +22,34 @@
 
 
 
-
+// fruits.indexOf("Apple");
 
 
 function find_element(input_1, input_2) {
-    if (input_1.indexOf(input_2) === undefined)
-      return 'hi!';
+    return input_1.indexOf(input_2);
+
 
 }
 
-find_element(['alpha','beta'],'gamma');
+console.log(find_element(['alpha','beta', 'gamma'],'gamma'));
 
+
+
+
+function find_element_1(input_1, input_2) {
+	var counter = 0;
+
+	while(counter < input_1.length) {
+		if (input_1[counter] === input_2) {
+			return counter;
+		}
+		counter += 1;
+	}
+	return -1;
+
+}
+
+console.log(find_element_1(['bobo', 'bonny', 'ben', 'ab', 'c'],'ab'));
 
 // #print find_element([1,2,3],3)
 // #>>> 2

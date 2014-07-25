@@ -8,11 +8,14 @@
 # If there is no matching element,
 # return -1.
 
-def find_element(args*)
-  return input
+def find_element(input_1, input_2)
+  if input_1.find_index(input_2) == nil
+    return -1
+  end
+  input_1.find_index(input_2)
 end
 
-puts find_element([1,2,3],3)
+puts find_element(['bob','alpha','beta'],'alpha')
 
 
 #print find_element([1,2,3],3)
